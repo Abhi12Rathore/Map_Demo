@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+    <fragment
+        android:id="@+id/googleMap"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/background"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search Here....."
+            android:textColor="#000000"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/search" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/type"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/searchBar"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/type"
+
+        />
+
+    <ImageView
+        android:id="@+id/nearBy"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/type"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/nearby"
+
+        />
+
+
+</RelativeLayout>
